@@ -1,0 +1,255 @@
+body {
+  background-color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight:100; 
+}
+
+@font-face{
+  font-family:Cabin-Regular;
+  src: url(../typography/Cabin-Bold.otf);
+
+}
+
+/*hejsan animation*/
+
+.hejsan {
+ opacity:0;
+}
+.hejAn{
+ animation: slidein 2s forwards; /* Chrome, Safari, Opera */
+}
+
+@keyframes slidein {
+ 0%   {opacity:0; transform: translateY(0.5em);} 
+ 25%   {opacity:0; transform: translateY(0em);} 
+ 50%   {opacity:1; transform: translateY(-0.2em);}
+ 100%   {opacity:1; transform: translateY(0em);}
+}
+
+/*end animation*/
+
+
+/*Index*/
+/*Text*/
+.font-cabin{
+  font-family:Cabin-Regular;
+}
+
+.indexTitle {
+  margin-top: 150px;
+}
+#subtitle-Jonas {
+  font-size: 35px;
+}
+
+#title-hej{
+  color:#8EA674;
+  font-size: 65px;
+  font-weight: bold;
+}
+
+#subtitle-i-love{
+  font-size: 17px;
+}
+.offset-top{
+  margin-top: 0px;
+}
+.letter-spacing{
+  letter-spacing: 0.05em;
+}
+
+.icon-cog {
+  color: black;
+}
+
+.icon-cog:hover{
+  color:#8EA674;
+}
+
+/* project links */
+.offset-top-my-work{
+  margin-top: 120px;
+}
+.projectImgLink{
+  text-align: center;
+}
+.projectImgLink li{
+  text-align: left;
+  margin:0px;
+  margin-right: 20px;
+  width:250px;/*300px*/
+  height:250px; /*400px*/
+  display:inline-block;
+}
+
+#project-imgs{
+  position:absolute;
+  width: 250px;
+  height: 250px;
+}
+
+
+/*Hover the project links*/
+span.text-content {
+  font-size: 20px;
+  background: orange;
+  color: #ffffff ;
+  cursor: pointer;
+  display: table;
+  height: 250px;
+  position: absolute;
+  width: 250px;
+  opacity: 0;
+}
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+ul li:hover span.text-content {
+  opacity: 1;
+
+}
+/*Project pages*/ 
+/************EMBED Video************/
+.embed-container { 
+  position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; 
+} 
+.embed-container iframe, .embed-container object, .embed-container embed { 
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+}
+
+
+.video{
+  display: block;
+  margin: 0 auto;
+  height: 281px;
+  width: 500px;
+}
+.text-container{
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 60%;
+  height: auto;
+}
+.text-container h1{
+  font-size: 35px;
+  font-weight:400; 
+}
+.text-container span{
+  font-size: 13px;
+  color:grey;
+}
+.text-container p{
+  margin-top: 0px;
+  font-size: 15px;
+}
+
+/*Button */
+#btn-style{
+  width: 200px; 
+  border: 0px solid black; 
+  padding:0 0px; 
+  margin: 50px auto;
+}
+.btn {
+  text-decoration: none;
+  display: block;
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  background: #0EBDBD;
+  padding: 16px  31px;
+}
+
+.btn:hover {
+  color: #fff;
+  opacity: .75;
+}
+.btn:focus {
+  outline:none;
+}
+
+/*work*/
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.foot-note-text{
+  margin-top: 15px;
+  margin-bottom: 40px;
+
+}
+/*img shadows*/
+#-img>img, .row > div > img, .row > div > a > img{
+  box-shadow: 0px 0px 10px #888888;
+}
+/**/
+
+#-img >img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+/************************ responsive web design ***************************/
+
+
+@media only screen and (max-width: 1000px){
+  /* Styles */
+
+  .text-container{
+    margin-top: 30px;
+    
+  }
+
+  .indexTitle {
+    margin-top: 30px;
+    width:  90% ;
+  }
+
+  /* projects links*/
+  .projectImgLink li{
+    margin:0px;
+    margin-right: 0px;
+  }
+
+  #project-imgs{
+    position:absolute;
+    width: 250px;
+    height: 250px;
+  }
+
+  /* projects */
+
+  .video{
+    height: 400px;
+    width: 100%;
+  }
+  .text-container{
+    width: 90%;
+  }
+  .text-container h1{
+    margin-top: 0px;
+  }
+
+  /* Button */
+  #btn-style{
+    width: 100%; 
+    margin-bottom: 0px;
+  }
+
+  .btn {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    padding: 30px;
+  }
+
+  }/* end of media only */
