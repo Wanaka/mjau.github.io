@@ -16,12 +16,17 @@ body {
  opacity:0;
 }
 .hejAn{
+  animation: slidein 2s forwards; /* Chrome, Safari, Opera */
   -webkit-animation: slidein 2s forwards;/* Safari 4+ */
   -moz-animation: slidein 2s forwards; /* Fx 5+ */
   -o-animation: slidein 2s forwards;/* Opera 12+ */
-  animation: slidein 2s forwards; /* Chrome, Safari, Opera */
 }
-
+@keyframes slidein {
+ 0%   {opacity:0; transform: translateY(0.5em);} 
+ 25%   {opacity:0; transform: translateY(0em);} 
+ 50%   {opacity:1; transform: translateY(-0.2em);}
+ 100%   {opacity:1; transform: translateY(0em);}
+}
 @-webkit-keyframes slidein {
  0%   {opacity:0; transform: translateY(0.5em);} 
  25%   {opacity:0; transform: translateY(0em);} 
@@ -43,12 +48,7 @@ body {
  100%   {opacity:1; transform: translateY(0em);}
 }
 
-@keyframes slidein {
- 0%   {opacity:0; transform: translateY(0.5em);} 
- 25%   {opacity:0; transform: translateY(0em);} 
- 50%   {opacity:1; transform: translateY(-0.2em);}
- 100%   {opacity:1; transform: translateY(0em);}
-}
+
 
 /*end animation*/
 
@@ -65,14 +65,30 @@ body {
 #subtitle-Jonas {
   font-size: 35px;
 }
+.inform-text{
+  text-align: center;
+  font-size: 20px;
+  margin:20px 0px 40px 0px;
+}
 
 #title-hej{
   color:#8EA674;
   font-size: 65px;
   font-weight: bold;
 }
+.bold{font-weight: bold;}
+.italic{font-style: italic;}
+.redC{color:red;}
+.e-mail{
+  font-size: 17px;
+  text-align: center;
+  margin-top: 20px;
+}
+.well-bg{
+  background-color:#e3e3e3;
+}
 
-#subtitle-i-love{
+#subtitle-i-love, .font-17{
   font-size: 17px;
 }
 .offset-top{
@@ -92,7 +108,7 @@ body {
 
 /* project links */
 .offset-top-my-work{
-  margin-top: 120px;
+  margin-top: 60px;
 }
 .projectImgLink{
   text-align: center;
