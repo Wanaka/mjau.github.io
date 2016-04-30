@@ -102,14 +102,23 @@ body {
   color: black;
 }
 
-.icon-cog:hover{
-  color:#8EA674;
+/*
+  project links section on index page
+*/
+.onhoverBg:hover{color: #8EA674;}
+.onhover:hover{
+  background-color: #000000;
+   text-decoration: none;
+   color:#fff;
 }
-
+.onhoverC:hover{
+  color: #ffffff;
+}
 /* project links */
-.offset-top-my-work{
+.project-links{
   margin-top: 60px;
 }
+/*
 .projectImgLink{
   text-align: center;
 }
@@ -117,8 +126,8 @@ body {
   text-align: left;
   margin:0px;
   margin-right: 20px;
-  width:250px;/*300px*/
-  height:250px; /*400px*/
+  width:250px;
+  height:250px; 
   display:inline-block;
 }
 
@@ -127,7 +136,7 @@ body {
   width: 250px;
   height: 250px;
 }
-
+*/
 
 /*Hover the project links*/
 span.text-content {
@@ -254,17 +263,6 @@ img{
     width:  90% ;
   }
 
-  /* projects links*/
-  .projectImgLink li{
-    margin:0px;
-    margin-right: 0px;
-  }
-
-  #project-imgs{
-    position:absolute;
-    width: 250px;
-    height: 250px;
-  }
 
   /* projects */
 
