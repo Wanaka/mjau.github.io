@@ -4,13 +4,10 @@
 	.hiring-me-animation{display: none;}
 }
 @media (max-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-	.scroll-arrow-margin{margin-top: 20%;}
  }
 @media (max-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
-	.scroll-arrow-margin{margin-top: 3%;}
 }
 @media (max-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-	.scroll-arrow-margin{margin-top: 15%;}
 }
 @media (max-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
 }
@@ -28,7 +25,6 @@ body, h2, h3, h4, h5, h6, p, span{
 .padding-top-50{padding-top: 50px;} 
 .padding-top-20{ padding-top: 20px;}
 .padding-bottom-20{ padding-bottom: 20px;}
-.scroll-arrow-margin{padding-top: 11%;}
 .line-height-130{line-height: 130%;}
 
 .jumbotron{
@@ -296,32 +292,3 @@ background-color: #FDFDFD;
 	10% { opacity: 1; -ms-transform: translateY(0px); }
 	100% { opacity: 1; }
 }
-/*scroll-down-animation*/
-.scroll-down-animation{
-	animation: scrollDownAn 3s linear infinite 0s;
-	-webkit-animation: scrollDownAn 3s linear infinite 0s;
-	-ms-animation: scrollDownAn 3s linear infinite 0s;
-	opacity: 0;
-}
-@-moz-keyframes scrollDownAn{
-	0% { opacity: 0;  -moz-transform: translateY(-5px);}
-	10% { opacity: 1; -moz-transform: translateY(0px); }
-	20% { opacity: 1; -moz-transform: translateY(5px); }
-	30% { opacity: 0; -moz-transform: translateY(10px); }
-	40% { opacity: 0; }
-}
-@-webkit-keyframes scrollDownAn{
-	0% { opacity: 0;  -webkit-transform: translateY(-5px);}
-	10% { opacity: 1; -webkit-transform: translateY(0px); }
-	20% { opacity: 1; -webkit-transform: translateY(5px); }
-	30% { opacity: 0; -webkit-transform: translateY(10px); }
-	40% { opacity: 0; }
-}
-@-ms-keyframes scrollDownAn{
-	0% { opacity: 0;  -ms-transform: translateY(-5px);}
-	10% { opacity: 1; -ms-transform: translateY(0px); }
-	20% { opacity: 1; -ms-transform: translateY(5px); }
-	30% { opacity: 0; -ms-transform: translateY(10px); }
-	40% { opacity: 0; }
-}
-/*end - scroll-down-animation*/
